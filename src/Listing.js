@@ -27,6 +27,7 @@ export class Listing extends Component {
             {this.state.data.map((item, index) => {
                 return (
                     <div className='listing-container'>
+                        <img src="{item.image"></img>
                         <div className='wrapper'>
                             <div key={index}>
                             <h1>{item.name}</h1>
@@ -52,6 +53,14 @@ export class Listing extends Component {
                                     Total Value
                                 </th>
 
+                            </tr>
+                            <tr>
+                                <td>
+                                    Lot
+                                </td>
+                                <td>
+                                    Placeholder value per sqm
+                                </td>
                             </tr>
 
                         </table>

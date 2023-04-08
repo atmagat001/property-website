@@ -7,4 +7,15 @@
     max-width: 400px;
     background-color: #f5f5f5;
     margin: auto;
+    border: solid 1px red;
+}
+
+
+table {
+  border: solid 1px ;
+}
+
+img {
+  width: 200px;
+  aspect-ratio: 1/2;
 }

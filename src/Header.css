@@ -10,7 +10,7 @@
 header {
     height: 50px;
     width: 100vw;
-    background-color: black;
+    background-color: #7AA874;
     position: sticky;
     top: 0;
     z-index: 2;
@@ -39,7 +39,7 @@ h2 {
 }
 
 h3 {
-    color: gray;
+    color: black;
     font-size: 1rem;
     font-weight: 400;
     padding: 10px;
