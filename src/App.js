@@ -18,7 +18,7 @@ export class App extends Component {
       <div>
         <Header />
         <Listing />
-        <h1>React App</h1>
+        
       </div>
     )
   }
