@@ -20,13 +20,34 @@ class Filter extends Component {
  
 
 render() { 
-
-    return (
+    if ({this.state.name}.length === 0 ) {
         <div>
-            <h1>Property Number {this.state.name[1].index}</h1>
-            <p>{this.state.name[1].name}</p>
+            Loading...
         </div>
-    )
+    } else {
+
+        return (
+            <div>
+                {
+                    this.state.name.map((property)=>{
+                        return <div>
+                            <h3>
+                                {property.name}
+                            </h3>
+                        </div>
+                    })
+                }
+    
+                {/* 
+                <h1>Property Number {this.state.name[1].index}</h1>
+                <p>{this.state.name[1].name}</p> */}
+            </div>
+        )
+
+    }
+
+
+   
     
 }
 }
