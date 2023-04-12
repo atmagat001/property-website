@@ -1,6 +1,7 @@
 import React, { Component } from 'react'
 import Header from './Header'
-import { Listing } from './Listing'
+/* import { Listing } from './Listing' */
+import Filter from './Filter'
 
 export class App extends Component {
   constructor(props) {
@@ -17,7 +18,8 @@ export class App extends Component {
     return (
       <div>
         <Header />
-        <Listing />
+        <Filter />
+        {/* <Listing /> */}
         
       </div>
     )
