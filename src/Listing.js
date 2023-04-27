@@ -36,24 +36,27 @@ export class Listing extends Component {
 
 
   render() {
+    
+    const {handleNext, handlePrevious} = this;
+    const {name, classification, address} = this.state.data[this.state.offset];
+
     if (this.state.data.length === 0) { 
         return <div>Loading...</div>
     } else {
 
     
     return (
-        
         <div className="listing">
             <div>
-                <h3>{this.state.data[this.state.offset].name}</h3>
-                <p>{this.state.data[this.state.offset].classification}</p>
-                <p>{this.state.data[this.state.offset].address}</p>
+                <h3>{name}</h3>
+                <p>{classification}</p>
+                <p>{address}</p>
             </div>
             
-            <button onClick={this.handlePrevious}> 
+            <button onClick={handlePrevious}> 
                 Previous
             </button>
-            <button onClick={this.handleNext} > 
+            <button onClick={handleNext} > 
                 Next
             </button>
         </div>
